@@ -29,7 +29,7 @@ export default function HomeBody() {
             if (axios.isAxiosError(err) && err.response) {
                 setMessage(err.response.data?.message || 'Server error');
             } else {
-                setMessage('An unexpected error occurred');
+                setMessage('Error: An unexpected error occurred');
                 console.error(err);
             }
         }
